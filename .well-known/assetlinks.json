@@ -1,0 +1,22 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.scottjahn.twa",
+      "sha256_cert_fingerprints": [
+        "91:DB:F1:CE:8F:DD:E0:44:9D:2D:15:BA:A8:DA:6B:0D:A9:45:CC:3D:64:97:B3:DD:1D:66:4D:C3:F2:B5:26:6D"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.scottjahn.wow",
+      "sha256_cert_fingerprints": [
+        "90:CE:24:34:E7:BB:51:C5:95:07:E8:58:06:72:6B:CC:75:AF:3A:7A:3C:44:33:1A:9E:4F:DF:46:86:F4:65:D1"
+      ]
+    }
+  }
+]

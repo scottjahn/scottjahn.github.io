@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scott Jahn</title>
+<meta name="description" content="Coding projects by Scott Jahn — a pickleball league manager, two browser games, and a pile of Advent of Code solutions.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>">
+<style>
+  :root {
+    --bg: #fbfbf9;
+    --panel: #ffffff;
+    --ink: #16171a;
+    --ink-soft: #5b6068;
+    --line: #e3e2dd;
+    --accent: #1f6f5c;
+    --accent-soft: #eaf2ef;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #131417;
+      --panel: #1b1d21;
+      --ink: #edeef0;
+      --ink-soft: #9aa0a8;
+      --line: #2a2d33;
+      --accent: #6fd2b3;
+      --accent-soft: #1d2b28;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 0 1.5rem 5rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 44rem; margin: 0 auto; }
+
+  header {
+    padding: 4.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 2.5rem;
+  }
+
+  h1 {
+    margin: 0 0 .6rem;
+    font-size: clamp(2rem, 6vw, 2.75rem);
+    letter-spacing: -.02em;
+    line-height: 1.1;
+  }
+
+  .tagline {
+    margin: 0;
+    max-width: 34rem;
+    color: var(--ink-soft);
+    font-size: 1.05rem;
+  }
+
+  h2 {
+    font-size: .78rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: var(--ink-soft);
+    font-weight: 600;
+    margin: 0 0 1.25rem;
+  }
+
+  .projects {
+    list-style: none;
+    margin: 0 0 3rem;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1.4rem 1.5rem;
+  }
+
+  .card h3 {
+    margin: 0 0 .4rem;
+    font-size: 1.15rem;
+    letter-spacing: -.01em;
+  }
+
+  .card p {
+    margin: 0 0 1rem;
+    color: var(--ink-soft);
+  }
+
+  .card p a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .card p a:hover { border-bottom-color: var(--accent); }
+
+  .tag {
+    display: inline-block;
+    margin-left: .6rem;
+    padding: .1rem .5rem;
+    border-radius: 100px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    font-size: .7rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    vertical-align: 2px;
+  }
+
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem .75rem;
+    font-size: .92rem;
+  }
+
+  .links a {
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+  }
+
+  .links a:hover { border-bottom-color: var(--accent); }
+
+  .links span[aria-hidden] { color: var(--line); }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 1.5rem;
+    color: var(--ink-soft);
+    font-size: .9rem;
+  }
+
+  footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Scott Jahn</h1>
+    <p class="tagline">
+      A few things I build in my spare time — a league stats portal, two browser games
+      that also ship as Android apps, and a yearly Advent of Code habit.
+    </p>
+  </header>
+
+  <main>
+    <h2>Projects</h2>
+    <ul class="projects">
+
+      <li class="card">
+        <h3>HWPL Manager</h3>
+        <p>
+          Stats portal for the Hiram Walker Pickleball League. Player, team and league
+          tables with drill-down detail pages, plus per-court session results. The public
+          site is fully static — stats are snapshotted from a local SQLite database at
+          build time, so there's no backend to run.
+        </p>
+        <div class="links">
+          <a href="https://scottjahn.github.io/hwpl-manager/">Open the site</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/scottjahn/hwpl-manager">Source</a>
+        </div>
+      </li>
+
+      <li class="card">
+        <h3>Power of 2 <span class="tag">Game</span></h3>
+        <p>
+          A number-merge puzzle: swipe matching tiles together to build bigger ones. Written
+          as an offline-capable PWA — one page, no framework, playable from the browser or
+          installed to a home screen.
+        </p>
+        <div class="links">
+          <a href="https://scottjahn.github.io/power-of-2/">Play</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/scottjahn/power-of-2">Source</a>
+        </div>
+      </li>
+
+      <li class="card">
+        <h3>World of War <span class="tag">Game</span></h3>
+        <p>
+          A 2D top-down autobattler in the spirit of <em>Totally Accurate Battle Simulator</em>.
+          Both sides buy and place an army against a shared budget, then the battle runs itself
+          and declares a winner. One engine, four editions — Earth, Animals, Space and
+          Prehistoric — each with its own roster, maps and rules.
+        </p>
+        <div class="links">
+          <a href="https://scottjahn.github.io/WorldOfWar/">Play</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/scottjahn/WorldOfWar">Source</a>
+        </div>
+      </li>
+
+      <li class="card">
+        <h3>Advent of Code</h3>
+        <p>
+          My solutions to the yearly <a href="https://adventofcode.com/">Advent of Code</a>
+          puzzles, kept in one repository year by year.
+        </p>
+        <div class="links">
+          <a href="https://github.com/scottjahn/advent-of-code">Repository</a>
+        </div>
+      </li>
+
+    </ul>
+  </main>
+
+  <footer>
+    More at <a href="https://github.com/scottjahn">github.com/scottjahn</a>
+    — or my work account,
+    <a href="https://github.com/scottjahn-pr">github.com/scottjahn-pr</a>.
+  </footer>
+
+</div>
+</body>
+</html>
