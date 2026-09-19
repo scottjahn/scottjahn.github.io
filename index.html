@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Scott Jahn</title>
-<meta name="description" content="Coding projects by Scott Jahn — two stats trackers, two browser games, and a pile of Advent of Code solutions.">
+<meta name="description" content="Coding projects by Scott Jahn — two stats trackers, three browser games, a chess trainer, and a pile of Advent of Code solutions.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⌘</text></svg>">
 <style>
   :root {
@@ -153,8 +153,9 @@
   <header>
     <h1>Scott Jahn</h1>
     <p class="tagline">
-      A few things I (well mostly Claude ;) ) build in my spare time — a pickleball league stats portal, a stats tracker for Dominion, two browser games
-      that also ship as Android apps, and my yearly Advent of Code solutions.
+      A few things I (well mostly Claude ;) ) build in my spare time — stats trackers for
+      pickleball and Dominion, three browser games (two of which also ship as Android apps),
+      a trainer for my own chess mistakes, and my yearly Advent of Code solutions.
     </p>
   </header>
 
@@ -207,6 +208,22 @@
       </li>
 
       <li class="card">
+        <h3>War of Worldships <span class="tag">Game</span></h3>
+        <p>
+          A 3D naval combat game in the style of <em>World of Warships</em>, built for my
+          8-year-old. You command a real warship against bot fleets, earning XP toward a tech
+          tree of 157 historical hulls across five navies. The 3D view is a small perspective
+          renderer written from scratch onto a plain 2D canvas — no WebGL, no libraries,
+          nothing to install.
+        </p>
+        <div class="links">
+          <a href="https://scottjahn.github.io/WarOfWorldships/">Play</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/scottjahn/WarOfWorldships">Source</a>
+        </div>
+      </li>
+
+      <li class="card">
         <h3>Dominion Scores</h3>
         <p>
           Score tracker for our <em>Dominion</em> games. Because a 40-point win means nothing
@@ -219,6 +236,22 @@
           <a href="https://scottjahn.github.io/dominion-scores/">Open the site</a>
           <span aria-hidden="true">·</span>
           <a href="https://github.com/scottjahn/dominion-scores">Source</a>
+        </div>
+      </li>
+
+      <li class="card">
+        <h3>Chess Mistake Trainer</h3>
+        <p>
+          Drill the moves you actually got wrong. Import your chess.com games, let Stockfish
+          find your mistakes, record the move you should have played, and practise those
+          positions as puzzles. Games, database and engine stay on my machine — the published
+          trainer is one exported puzzle file, so anyone with the link can try the set and
+          keep their own score.
+        </p>
+        <div class="links">
+          <a href="https://scottjahn.github.io/ChessTrainer/">Open the trainer</a>
+          <span aria-hidden="true">·</span>
+          <a href="https://github.com/scottjahn/ChessTrainer">Source</a>
         </div>
       </li>
 
