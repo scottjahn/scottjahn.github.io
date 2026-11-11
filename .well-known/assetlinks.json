@@ -28,5 +28,25 @@
         "3E:7D:23:3C:25:16:81:D7:FA:9E:8D:AA:F6:05:B2:4B:7A:42:BA:C7:91:3C:41:DE:B2:4F:85:FA:54:5B:3C:D0"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.scottjahn.wolffight",
+      "sha256_cert_fingerprints": [
+        "F6:75:13:F5:CB:F6:D1:9D:29:CE:13:12:0C:71:84:4C:3A:F4:FE:6B:34:63:A4:D6:A4:0B:24:A3:C8:16:EC:8D"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.scottjahn.frontline1944",
+      "sha256_cert_fingerprints": [
+        "B5:4B:C2:81:E6:A8:AD:54:B1:A9:5F:EA:C7:2B:A5:F8:3D:F2:96:92:F0:D3:75:80:29:BC:A5:6C:38:9A:83:93"
+      ]
+    }
   }
 ]
